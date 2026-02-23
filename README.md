@@ -218,14 +218,3 @@ http://localhost:3000
 * CI/CD pipeline
 
 ---
-
-## 👤 Penulis
-
-Jordan Wijayanto
-Mahasiswa Informatika
-
----
-
-## 📜 Lisensi
-
-Digunakan untuk keperluan akademik dan penelitian.
