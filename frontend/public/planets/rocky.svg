@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rockyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5a3327;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a1a14;stop-opacity:1" />
+    </radialGradient>
+    <filter id="rockyglow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="75" fill="url(#rockyGlow)" filter="url(#rockyglow)"/>
+  <circle cx="85" cy="80" r="8" fill="#4a7c3f" opacity="0.7"/>
+  <circle cx="120" cy="95" r="6" fill="#3d6b32" opacity="0.6"/>
+  <path d="M 60 110 Q 80 120 100 115 Q 120 110 140 120" fill="#4a5a4f" opacity="0.5"/>
+  <circle cx="75" cy="130" r="5" fill="#2d3d28" opacity="0.4"/>
+  <circle cx="130" cy="125" r="4" fill="#5a7050" opacity="0.5"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="lavaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6600;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#cc3300;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#330000;stop-opacity:1" />
+    </radialGradient>
+    <filter id="lavaglow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="75" fill="url(#lavaGlow)" filter="url(#lavaglow)"/>
+  <circle cx="70" cy="75" r="12" fill="#ffaa00" opacity="0.8"/>
+  <circle cx="130" cy="110" r="10" fill="#ff8800" opacity="0.7"/>
+  <circle cx="100" cy="140" r="8" fill="#ff6600" opacity="0.6"/>
+  <path d="M 50 100 Q 70 95 90 105" stroke="#ffcc00" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>

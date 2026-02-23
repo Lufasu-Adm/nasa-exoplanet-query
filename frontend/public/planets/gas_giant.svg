@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gasGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7f7fff;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#4a4a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="80" fill="url(#gasGlow)" filter="url(#glow)"/>
+  <circle cx="60" cy="80" r="8" fill="#9090cc" opacity="0.6"/>
+  <circle cx="140" cy="120" r="6" fill="#6a6aaa" opacity="0.5"/>
+  <circle cx="100" cy="140" r="5" fill="#8080bb" opacity="0.4"/>
+</svg>
