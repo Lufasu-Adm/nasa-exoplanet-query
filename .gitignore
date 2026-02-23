@@ -1,0 +1,71 @@
+# --- FRONTEND (Next.js / Node.js) ---
+# Mengabaikan folder dependency yang sangat berat
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# File environment (Rahasia API Key, dsb)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# File log dan debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+
+# --- BACKEND (Python / FastAPI) ---
+# Mengabaikan Virtual Environment agar repo tidak bengkak
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache dan file kompilasi
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Data temporary dan logs
+*.log
+*.csv
+*.json
+!test_response.json  # Kecuali file ini jika ingin dijadikan contoh API
+
+
+# --- MACHINE LEARNING ---
+# Model biner (Opsional: hapus '#' jika ingin mengabaikan model besar)
+# habitability_model.pkl
+
+# Dataset mentah yang besar
+data/raw/
+data/processed/
+
+
+# --- IDE & SYSTEM ---
+# Folder konfigurasi editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+# --- MISC ---
+.vercel
+.turbo
